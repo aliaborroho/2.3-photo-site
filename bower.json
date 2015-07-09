@@ -1,0 +1,20 @@
+{
+  "name": "2.3-photo-site",
+  "version": "0.0.0",
+  "authors": [
+    "Alia Borroho <aliaborroho@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "neat": "~1.7.2",
+    "fontawesome": "~4.3.0",
+    "reset-css": "~2.0.2011012602"
+  }
+}
