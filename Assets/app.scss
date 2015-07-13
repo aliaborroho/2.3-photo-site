@@ -1,16 +1,36 @@
-@import 'fontawesome/css/fontawesome.css';
-@import 'reset-css/reset';
-@import 'textures';
+$fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
+@import 'font-awesome';
+@import 'reset';
+
 @import 'bourbon';
 @import 'neat';
+@import 'vars';
 
 html{
-box-sizing: border-box;
+	box-sizing: border-box;
 }
  *, *:before, *:after{
 	box-sizing:inherit;
 }
 
 body {
-	background-color: red;
+	background-color: $bg-color;
+	color: $font-color;
+}
+
+article {
+	@include outer-container($max-width);
+
+	.photo {
+		@include span-columns(6);
+		@include shift(3);
+
+		img {
+			width: 100%;
+		}
+	}
+	.camera-details {
+		@include span-columns(3);
+
+	}
 }
