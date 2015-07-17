@@ -1,10 +1,14 @@
+@import 'reset';
 $fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
 @import 'font-awesome';
-@import 'reset';
 
 @import 'bourbon';
 @import 'neat';
 @import 'vars';
+
+$bg-color:#2A2A2A;
+$font-color:#818181;
+$orange:#FF7F00;
 
 html{
 	box-sizing: border-box;
@@ -18,8 +22,43 @@ body {
 	color: $font-color;
 }
 
+.logo {
+	text-align: center;
+	width:100%;
+}
+	.logo img {
+	border-radius: 50%;
+	width:100px;
+	height:100px;
+	margin-bottom: 2.5em;
+
+}
+.items{
+	float:right;
+	text-decoration: none;
+}
+.items a {
+	color:$font-color;
+}
+.items a:nth-of-type(2){
+	color:#FF7F00;
+}
+.items a:hover{
+	color:#FF7F00;
+}
+.desc {
+	padding-top: 20px;
+}
+.Alia {
+	color:#FFFFFF;
+	}
+.fa-chevron-down {
+	color:$orange;
+}
+
 article {
 	@include outer-container($max-width);
+	padding-bottom: 100px;
 
 	.photo {
 		@include span-columns(6);
@@ -32,5 +71,8 @@ article {
 	.camera-details {
 		@include span-columns(3);
 
+		span {
+			display: block;
+		}
 	}
 }
